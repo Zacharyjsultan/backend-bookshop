@@ -20,16 +20,16 @@ INSERT INTO books (title, released) VALUES
 CREATE table authors (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name VARCHAR NOT NULL,
-  dob DATE Not NUll,
+  dob DATE,
   pod VARCHAR
 );
 
 INSERT INTO authors (name, dob, pod) VALUES
-('Rauf Tapatio', '1988', 'Canada'), 
-('Miquel', '1857', 'Mazatlan'),
-('Abalone Simpson', '2998', 'MAINE'),
-('Neil River', '1966', 'Xocitil'),
-('Terrie Cruise', '1745', 'Uzbekistan');
+('Rauf Tapatio', '1988-12-01', 'Canada'), 
+('Miquel', '1857-01-12', 'Mazatlan'),
+('Abalone Simpson', '2098-04-02', 'MAINE'),
+('Neil River', '1966-09-02', 'Xocitil'),
+('Terrie Cruise', '1745-09-02', 'Uzbekistan');
 
 
 CREATE table books_authors (

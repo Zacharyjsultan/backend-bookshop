@@ -9,11 +9,10 @@ describe('books routes', () => {
   });
   test('/books returns list', async () => {
     const res = await request(app).get('/books');
-    expect(res.body.length).toEqual(6);
-    expect(res.body[0]).toEqual({
+    expect(res.body[0]).toMatchObject({
       id: expect.any(String),
       title: expect.any(String),
-      year: expect.any(Number),
+      released: expect.any(Number),
     });
   });
   afterAll(() => {

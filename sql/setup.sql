@@ -25,7 +25,7 @@ CREATE table authors (
 );
 
 INSERT INTO authors (name, dob, pod) VALUES
-('Rauf Tapatio', '1988-12-01', 'Canada'), 
+('Rauf Tapatio', '1988-12-02', 'Canada'), 
 ('Miquel', '1857-01-12', 'Mazatlan'),
 ('Abalone Simpson', '2098-04-02', 'MAINE'),
 ('Neil River', '1966-09-02', 'Xocitil'),

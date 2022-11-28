@@ -12,7 +12,7 @@ describe('authors routes', () => {
     expect(res.body.length === 5);
   });
 });
-test('/authors/:id', async () => {
+test.skip('/authors/:id', async () => {
   const res = await request(app).get('/authors/1');
   expect(res.body).toEqual({
     id: expect.any(Number),
